@@ -1,0 +1,177 @@
+/* General Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  cursor: pointer;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  &.active {
+    span {
+      background-color: #007bff;
+    }
+  }
+}
+
+/* Navigation Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+/* Search Form */
+.searchForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
+
+/* Login Block */
+.login {
+  display: flex;
+  gap: 1rem;
+
+  li a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+/* Upload Block */
+.upload {
+  display: flex;
+  gap: 1rem;
+
+  li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+
+    ul {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .searchForm {
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    .login,
+    .upload {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none; /* Hide the full menu */
+  }
+
+  .searchForm {
+    flex: 1;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login {
+    display: none; /* Hide login links */
+  }
+
+  .profileIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}

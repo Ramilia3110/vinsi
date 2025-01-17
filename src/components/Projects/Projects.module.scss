@@ -1,0 +1,25 @@
+.projects {
+  padding-bottom: 5rem;
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  h3 {
+    font-size: 3rem;
+    width: 25rem;
+    padding: 1.8rem 0;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
