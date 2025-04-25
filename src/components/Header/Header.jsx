@@ -29,7 +29,7 @@ export default function Header() {
             <a href="#explore">Explore</a>
           </li>
           <li>
-            <a href="#directory">Directory</a>
+            <a href="#directory">Projects</a>
           </li>
           <li>
             <a href="#academy">Academy</a>
