@@ -3,17 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ramilia3110.github.io/vinsi",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "chart.js": "^4.4.7",
+    "framer-motion": "^12.9.2",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
     "react-icon": "^1.0.0",
     "react-icons": "^5.4.0",
+    "recharts": "^2.15.1",
     "saas": "^1.0.0"
   },
   "devDependencies": {
@@ -25,6 +32,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "sass-embedded": "^1.83.1",
     "vite": "^6.0.5"

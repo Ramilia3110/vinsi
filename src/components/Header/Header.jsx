@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>W.</div>
+      <div className={styles.logo}>Vinsi</div>
 
       {/* Hamburger menu for smaller screens */}
       <div

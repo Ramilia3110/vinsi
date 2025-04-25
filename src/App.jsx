@@ -1,16 +1,17 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
 import Marquee from "./components/Marquee /Marquee";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
     <>
-      <Marquee />
+      {/* <Marquee /> */}
       <div className="container">
         <Header />
-        <Hero />
-        <Projects />
+
+        <Portfolio />
+        {/* <Projects /> */}
       </div>
     </>
   );

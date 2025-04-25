@@ -1,4 +1,11 @@
-:root {
+$primary-color: #4caf50;
+$secondary-color: #f4f4f4;
+$font-family: "Roboto", sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 *,

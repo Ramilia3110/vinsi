@@ -1,6 +1,6 @@
 import React from "react";
 import ava from "./../../assets/ava.jpg";
-import screenshot from "./../../assets/s.png";
+import screenshot from "./../../assets/dashboard.jpg";
 import { IoBookmarkOutline, IoShareSocialOutline } from "react-icons/io5";
 
 import { RiShareBoxFill } from "react-icons/ri";
@@ -9,6 +9,7 @@ import s from "./Hero.module.scss";
 const Hero = () => {
   return (
     <section className={s.hero}>
+      <div className={s.abstractBg}></div>
       <div className={s.icons}>
         <a href="">
           <IoBookmarkOutline />
@@ -22,7 +23,7 @@ const Hero = () => {
       </div>
       <div className={s.content}>
         <h5>Honorable Mention - Nov 20, 2024</h5>
-        <h1>Shane Collier</h1>
+        <h1>Digital Solutions</h1>
         <div className={s.author}>
           <img src={ava} alt="avatar of author" />
           <div className={s.name}>

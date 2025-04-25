@@ -13,8 +13,6 @@ const Projects = () => {
         <Card text1="Desktop" text2="Desktop thumbnail" img={screenshot} />
         <Card text1="Desktop" text2="Desktop thumbnail" img={screenshot} />
         <Card text1="Desktop" text2="Desktop thumbnail" img={screenshot} />
-        <Card text1="Desktop" text2="Desktop thumbnail" img={screenshot} />
-        <Card text1="Desktop" text2="Desktop thumbnail" img={screenshot} />
       </div>
     </div>
   );
