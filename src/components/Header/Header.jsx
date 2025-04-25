@@ -35,7 +35,7 @@ export default function Header() {
             <a href="#academy">Academy</a>
           </li>
           <li>
-            <a href="#conferences">Conferences</a>
+            <a href="#conferences">Contacts</a>
           </li>
           <li>
             <a href="#market">Market</a>
