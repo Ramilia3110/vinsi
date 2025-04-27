@@ -1,71 +1,44 @@
-/* General Styles */
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+  flex-wrap: wrap;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 0.4rem;
-  cursor: pointer;
-
-  span {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-  }
-
-  &.active {
-    span {
-      background-color: #007bff;
-    }
-  }
-}
-
-/* Navigation Menu */
-.menu {
+.logo {
   display: flex;
   align-items: center;
-  gap: 2rem;
-
-  ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li a {
-      text-decoration: none;
-      color: #333;
-      font-size: 1rem;
-    }
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
-
-  &.active {
-    display: block;
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212121;
   }
 }
 
-/* Search Form */
+.centerSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .searchForm {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  max-width: 400px;
 
   input {
+    flex: 1;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -76,102 +49,64 @@
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
   }
 }
 
-/* Login Block */
-.login {
-  display: flex;
-  gap: 1rem;
+.startButton {
+  text-transform: uppercase;
+  background-color: #8e2a61;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: background 0.3s;
 
-  li a {
-    text-decoration: none;
-    color: #333;
+  &:hover {
+    background-color: #71214d;
   }
 }
 
-/* Upload Block */
-.upload {
-  display: flex;
-  gap: 1rem;
-
-  li a {
-    text-decoration: none;
-    color: #007bff;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-
-    ul {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-
-    .searchForm {
-      margin-top: 1rem;
-      width: 100%;
-    }
-
-    .login,
-    .upload {
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .upload {
-    display: none;
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-@media (max-width: 480px) {
-  .menu {
-    display: none; /* Hide the full menu */
+  .logo {
+    margin-bottom: 30px;
+
+    img {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #212121;
+    }
+  }
+
+  .centerSection {
+    width: 100%;
+    justify-content: center;
   }
 
   .searchForm {
-    flex: 1;
+    width: 80%;
+    max-width: 100%;
   }
 
-  .header {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .login {
-    display: none; /* Hide login links */
-  }
-
-  .profileIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-left: 1rem;
-    cursor: pointer;
+  .startButton {
+    width: 80%;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    font-size: 12px;
   }
 }

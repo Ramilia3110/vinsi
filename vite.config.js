@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/vinsi/", // Replace 'REPOSITORY_NAME' with the name of your GitHub repo
+  base: "/vinsi/",
 });

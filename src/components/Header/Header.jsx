@@ -1,74 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Header.module.scss";
 
+import logo from "../../../public/vinsi.svg";
+
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Vinsi</div>
-
-      {/* Hamburger menu for smaller screens */}
-      <div
-        className={`${styles.hamburger} ${menuOpen ? styles.active : ""}`}
-        onClick={toggleMenu}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className={styles.logo}>
+        <img src={logo} alt="logo  of Vinsi" />
+        <p>Vinsi</p>
       </div>
 
-      {/* Navigation links */}
-      <nav className={`${styles.menu} ${menuOpen ? styles.active : ""}`}>
-        <ul>
-          <li>
-            <a href="#explore">Explore</a>
-          </li>
-          <li>
-            <a href="#directory">Projects</a>
-          </li>
-          <li>
-            <a href="#academy">Academy</a>
-          </li>
-          <li>
-            <a href="#conferences">Contacts</a>
-          </li>
-          <li>
-            <a href="#market">Market</a>
-          </li>
-        </ul>
-
-        {/* Search form */}
+      <div className={styles.centerSection}>
         <form action="" className={styles.searchForm}>
           <input type="search" placeholder="Search..." />
-          <button type="submit">S</button>
+          <button type="submit">Go</button>
         </form>
 
-        {/* Login options */}
-        <ul className={styles.login}>
-          <li>
-            <a href="#login">Log in</a>
-          </li>
-          <li>
-            <a href="#signup">Sign Up</a>
-          </li>
-        </ul>
-
-        {/* Upload options */}
-        <ul className={styles.upload}>
-          <li>
-            <a href="#be-pro">Be Pro</a>
-          </li>
-          <li>
-            <a href="#submit-website">Submit Website</a>
-          </li>
-        </ul>
-      </nav>
-      <div className="profileIcon">👤</div>
+        <a href="mailto:hello@vinsi.co" className={styles.startButton}>
+          Start Your Journey
+        </a>
+      </div>
     </header>
   );
 }

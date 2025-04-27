@@ -84,7 +84,7 @@ const Portfolio = () => {
             complex data into clear insights. From real-time analytics to
             seamless user experience — imagine it, and we'll build it.
           </p>
-          <button>Let's Work Together</button>
+          <a href="mailto:hello@vinsi.co">Let's Work Together</a>
         </div>
         <div className={s.image}>
           <img src={dashboard} alt="Example of dashboard design" />

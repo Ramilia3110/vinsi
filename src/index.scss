@@ -1,6 +1,4 @@
-$primary-color: #4caf50;
-$secondary-color: #f4f4f4;
-$font-family: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 @mixin flex-center {
   display: flex;
@@ -20,6 +18,7 @@ body {
   font-size: 62.5%;
   box-sizing: inherit;
   color: #000;
+  font-family: "Figtree", sans-serif;
 }
 
 .container {
